@@ -1,0 +1,19 @@
+name: RageSMP
+version: '1.0.0'
+main: fr.ragesmp.RageSMP
+api-version: '1.21.11'
+author: RageSMP
+description: Rage-based PvP progression for Paper 1.21.11
+
+commands:
+  rage:
+    description: Affiche ta Rage, ou retire de la Rage sous forme d'éclats
+    usage: /rage [player | withdraw <montant>]
+  setrage:
+    description: Définit la Rage d'un joueur
+    usage: /setrage <joueur> <0-5>
+    permission: ragesmp.admin
+
+permissions:
+  ragesmp.admin:
+    default: op
